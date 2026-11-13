@@ -1,9 +1,4 @@
 #!/usr/bin/env python3
-# /// script
-# dependencies = [
-#     "httpx",
-# ]
-# ///
 
 import os
 import sys
@@ -127,7 +122,7 @@ def main():
                         table_lines.append("| " + " | ".join(cols) + " |")
 
             if table_lines:
-                intro_snippet = f"📅 Data ostatniej aktualizacji: {current_date}\n\n"
+                intro_snippet = f"Data ostatniej aktualizacji: {current_date}\n\n"
                 markdown_content = intro_snippet + "\n".join(table_lines)
             else:
                 markdown_content = f"```text\n{file_content}\n```"
